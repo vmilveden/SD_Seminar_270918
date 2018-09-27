@@ -1,0 +1,26 @@
+{
+  "id": "190ce5e0-2128-4a72-8ed7-8161533b1a21",
+  "name": "SD Seminar",
+  "publisher": "D. E. Velepor",
+  "brief": "This is my Seminar Module",
+  "description": "This is my Description",
+  "version": "1.0.0.0",
+  "compatibilityId": "1.0.0.0",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "capabilities": [],
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "11.0.0.0",
+  "application": "11.0.0.0",
+  "features": "TranslationFile",
+  "showMyCode": true,
+  "target": "Internal",
+  "idRange": {
+    "from": 123456700,
+    "to": 123456799
+  }
+}
