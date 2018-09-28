@@ -135,7 +135,7 @@ page 123456710 "CSD Seminar Registration"
                 {
                     Caption = 'Co&mments';
                     Image = Comment;
-                    RunObject = Page 123456706;
+                    RunObject = Page "CSD Seminar Comment Sheet";
                     RunPageLink = "No." = Field ("No.");
                     RunPageView = where ("Table Name" = Const ("Seminar Registration"));
                 }
