@@ -8,7 +8,7 @@ table 123456732 "CSD Seminar Ledger Entry"
 
     fields
     {
-        field(1; "Entry No."; Code[10])
+        field(1; "Entry No."; Integer)
         {
             Caption = 'Entry No.';
         }

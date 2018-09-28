@@ -142,9 +142,9 @@ table 123456731 "CSD Seminar Journal Line"
             Caption = 'Reason Code';
             TableRelation = "Reason Code";
         }
-        field(35; "Posting No. Series"; Code[10])
+        field(35; "No. Series"; Code[10])
         {
-            Caption = 'Posting No. Series';
+            Caption = 'No. Series';
             TableRelation = "No. Series";
         }
     }
