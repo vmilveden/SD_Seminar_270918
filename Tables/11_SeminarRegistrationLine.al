@@ -17,6 +17,7 @@ table 123456711 "CSD Seminar Registration Line"
         field(3; "Bill-to Customer No."; Code[20])
         {
             TableRelation = Customer;
+            Caption = 'Bill-to Customer No.';
 
             trigger OnValidate();
             begin

@@ -16,37 +16,37 @@ page 123456722 "CSD Seminar Registers"
         {
             repeater(Group)
             {
-                field("No.";"No.")
-                {
-                    
-                }
-                field("Creation Date";"Creation Date")
+                field("No."; "No.")
                 {
 
                 }
-                field("User ID";"User ID")
+                field("Creation Date"; "Creation Date")
                 {
-                    
+
                 }
-                field("Source Code";"Source Code")
+                field("User ID"; "User ID")
                 {
-                    
+
                 }
-                field("Journal Batch Name";"Journal Batch Name")
+                field("Source Code"; "Source Code")
                 {
-                    
+
+                }
+                field("Journal Batch Name"; "Journal Batch Name")
+                {
+
                 }
             }
         }
         area(factboxes)
         {
-            systempart("Record Links";Links)
+            systempart("Record Links"; Links)
             {
 
             }
-            systempart("Notes";Notes)
+            systempart("Notes"; Notes)
             {
-                
+
             }
         }
     }
@@ -59,7 +59,7 @@ page 123456722 "CSD Seminar Registers"
             {
                 Image = WarrantyLedger;
                 RunObject = codeunit "CSD Seminar Reg. -Show Ledger";
-                
+
             }
         }
     }

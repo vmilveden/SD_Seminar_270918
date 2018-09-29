@@ -1,7 +1,7 @@
 page 123456710 "CSD Seminar Registration"
 {
-  // Chapter 7 - Lab 4-8 
-  // Added Action Post
+    // Chapter 7 - Lab 4-8 
+    // Added Action Post
 
     Caption = 'Seminar Registration';
     PageType = Document;
@@ -154,6 +154,21 @@ page 123456710 "CSD Seminar Registration"
                     PromotedCategory = Process;
                     ShortcutKey = F9;
                     RunObject = codeunit "CSD Seminar-Post (Yes/No)";
+                }
+                action("Print")
+                {
+                    Caption = '&Print';
+                    Image = Print;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedCategory = Process;
+                    trigger OnAction();
+                    var
+                        SeminarReportSelection: Record "CSD Seminar Report Selections";
+                    begin
+                        SeminarReportSelection.PrintReportSelection
+                        (SeminarReportSelection.Usage::Registration, Rec);
+                    end;
                 }
             }
         }
