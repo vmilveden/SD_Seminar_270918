@@ -329,7 +329,7 @@ table 123456710 "CSD Seminar Reg. Header"
             SeminarRegLine.TableCaption,
             SeminarRegLine.FieldCaption(Registered),
             true);
-        SeminarRegLine.SETRANGE(Registered);        
+        SeminarRegLine.SETRANGE(Registered);
         SeminarRegLine.deleteALL(true);
 
         SeminarCharge.RESET;
@@ -352,6 +352,11 @@ table 123456710 "CSD Seminar Reg. Header"
         end;
 
         InitRecord;
+        // >> Lab 8.1-1
+        if GetFilter("Seminar No.") <> '' then
+            if GetRangeMin("Seminar No.") = GetRangeMax("Seminar No.") then
+                Validate("Seminar No.", GetRangeMin("Seminar No."));
+        // << Lab 8 1-1
     end;
 
     local procedure InitRecord();
