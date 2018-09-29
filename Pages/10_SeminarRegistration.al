@@ -1,8 +1,7 @@
 page 123456710 "CSD Seminar Registration"
 {
-    // CSD1.00 - 2018-01-01 - D. E. Veloper
-    //   Chapter 6 - Lab 3-1
-    //     - Created new page
+  // Chapter 7 - Lab 4-8 
+  // Added Action Post
 
     Caption = 'Seminar Registration';
     PageType = Document;
@@ -128,10 +127,10 @@ page 123456710 "CSD Seminar Registration"
     {
         area(navigation)
         {
-            group("&Seminar Registration")
+            group("Seminar Registration")
             {
                 Caption = '&Seminar Registration';
-                action("Co&mments")
+                action("Comments")
                 {
                     Caption = 'Co&mments';
                     Image = Comment;
@@ -139,12 +138,22 @@ page 123456710 "CSD Seminar Registration"
                     RunPageLink = "No." = Field ("No.");
                     RunPageView = where ("Table Name" = Const ("Seminar Registration"));
                 }
-                action("&Charges")
+                action("Charges")
                 {
                     Caption = '&Charges';
                     Image = Costs;
                     RunObject = Page 123456724;
                     RunPageLink = "Document No." = Field ("No.");
+                }
+                action("Post")
+                {
+                    Caption = '&Post';
+                    Image = PostDocument;
+                    Promoted = true;
+                    PromotedIsBig = true;
+                    PromotedCategory = Process;
+                    ShortcutKey = F9;
+                    RunObject = codeunit "CSD Seminar-Post (Yes/No)";
                 }
             }
         }
